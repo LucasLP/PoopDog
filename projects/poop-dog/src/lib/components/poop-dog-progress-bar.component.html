@@ -1,0 +1,20 @@
+<div  class="container" 
+    [ngStyle]="containerStyle" >
+
+    <!--[src]="imageDog.src"-->
+    <img *ngIf="imageDog"
+    src="../../assets/images/dog.png"
+        [alt]="imageDog.alt"
+        [ngClass]="imageDog.type"
+        [ngStyle]="{'margin-left.px': imageCount *  marginLeftSize}"
+      />
+    <ng-container *ngFor="let image of images">
+      
+      <img
+        [src]="image.src"
+        [alt]="image.alt"
+        [ngClass]="image.type"
+        [ngStyle]="{'margin-left.px': image.position * marginLeftSize}"
+      />
+    </ng-container>
+  </div>
