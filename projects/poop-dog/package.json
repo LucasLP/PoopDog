@@ -1,7 +1,11 @@
 {
   "name": "poop-dog",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "author": "Lucas Prestes",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LucasLP/PoopDog"
+  },
   "description": "A fun component for front-end",
   "peerDependencies": {
     "@angular/common": "^17.0.0",

@@ -1,7 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'poopDogProgressbar',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './poop-dog-progress-bar.component.html',
   styleUrls: ['./poop-dog-progress-bar.component.css']
 })
@@ -9,8 +12,8 @@ export class PoopDogProgressBarComponent implements OnInit {
 
   @Input() maxImage = 8;
   @Input() marginLeftSize = 30;
-  @Input() dogPath= '../../poop-dog/src/assets/images/dog.png';
-  @Input() poopPath = '../../poop-dog/src/assets/images/poop.png';
+  @Input() dogPath= 'https://raw.githubusercontent.com/LucasLP/PoopDog/master/images/dog.png';
+  @Input() poopPath = 'https://raw.githubusercontent.com/LucasLP/PoopDog/master/images/poop.png';
 
   /**
    * Example of use

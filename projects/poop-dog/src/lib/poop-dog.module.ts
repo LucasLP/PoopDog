@@ -8,16 +8,11 @@ import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
-    PoopDogComponent,
-    PoopDogProgressBarComponent
   ],
   imports: [
-    CommonModule
-
+    CommonModule,
   ],
   exports: [
-    PoopDogComponent,
-    PoopDogProgressBarComponent
   ]
 })
 export class PoopDogModule { }

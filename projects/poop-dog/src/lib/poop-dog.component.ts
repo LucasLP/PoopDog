@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'poopDog-PoopDog',
+  selector: 'poopDog',
   standalone: true,
   imports: [],
   template: `

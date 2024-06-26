@@ -1,9 +1,9 @@
 <div  class="container" 
     [ngStyle]="containerStyle" >
 
-    <!--[src]="imageDog.src"-->
+    
     <img *ngIf="imageDog"
-    src="../../assets/images/dog.png"
+        [src]="imageDog.src"
         [alt]="imageDog.alt"
         [ngClass]="imageDog.type"
         [ngStyle]="{'margin-left.px': imageCount *  marginLeftSize}"
